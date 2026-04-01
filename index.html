@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Avasiya School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="navbar">
+  <a class="nav-logo" href="#home">
+    <div class="logo-emblem">
+      <!-- Replace with your logo image if needed: -->
+           <img src="images/logo.png" alt="Logo" style="width:46px;height:46px;border-radius:50%;">
+    </div>
+    <div class="logo-text">
+      <span>Aadarsh Avasiya School</span>
+      <span>Excellence in Education</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="https://wa.me/918292493246" target="_blank" class="nav-cta">
+        <i class="fab fa-whatsapp"></i> Connect
+      </a>
+    </li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"     onclick="closeMenu()">🏠 Home</a>
+  <a href="#about"    onclick="closeMenu()">🏫 About Us</a>
+  <a href="#academics"onclick="closeMenu()">📚 Academics</a>
+  <a href="#gallery"  onclick="closeMenu()">🖼️ Gallery</a>
+  <a href="#contact"  onclick="closeMenu()">📍 Contact</a>
+  <a href="https://wa.me/918292493246" target="_blank" onclick="closeMenu()" style="color:#25d366">💬 WhatsApp Us</a>
+</div>
+
+
+<!-- ============================================================
+     HERO SLIDER  –  8 slides
+     HOW TO CHANGE IMAGES:
+       Each .hero-bg div uses a CSS background-image.
+       Simply replace the src in the style attribute below
+       with your image path, e.g.  images/hero/slide1.jpg
+       Fallback gradient colours are used until you add images.
+============================================================ -->
+<section id="home">
+
+  <div class="hero-slides" id="heroSlides">
+
+    <!-- SLIDE 1 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide1.jpg.jpeg'), linear-gradient(135deg,#1a3a6b,#0a1f44,#1a4a2a);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">✦ Welcome to Excellence</div>
+        <h1>Aadarsh Avasiya <span>School</span></h1>
+        <p>Nurturing young minds with holistic education, strong values, and a passion for lifelong learning in a boarding environment.</p>
+        <div class="hero-btns">
+          <a href="#about"   class="btn-primary">Discover More</a>
+          <a href="#contact" class="btn-outline">Admissions Open</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide2.jpg.jpeg'), linear-gradient(135deg,#2a1a5e,#0a1f44,#4a2a00);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">📚 Academic Excellence</div>
+        <h1>Learning That <span>Transforms</span></h1>
+        <p>From pre-primary to secondary — our curriculum empowers students with knowledge, critical thinking, and creativity.</p>
+        <div class="hero-btns">
+          <a href="#academics" class="btn-primary">Explore Academics</a>
+          <a href="#gallery"   class="btn-outline">View Gallery</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide3.jpg.jpeg'), linear-gradient(135deg,#0a3a3a,#0a1f44,#3a0a1a);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🏆 Sports & Activities</div>
+        <h1>Beyond the <span>Classroom</span></h1>
+        <p>Sports, arts, music and co-curricular activities that shape well-rounded, confident individuals ready for tomorrow.</p>
+        <div class="hero-btns">
+          <a href="#gallery" class="btn-primary">See Activities</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide4.jpg.jpeg'), linear-gradient(135deg,#1a4a1a,#0a1f44,#4a1a00);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🌿 Residential Campus</div>
+        <h1>A Home Away <span>From Home</span></h1>
+        <p>Safe, nurturing boarding facilities that provide students a structured, enriching environment to grow and flourish.</p>
+        <div class="hero-btns">
+          <a href="#about" class="btn-primary">Learn More</a>
+          <a href="https://wa.me/918292493246" target="_blank" class="btn-outline">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide5.jpg.jpeg'), linear-gradient(135deg,#3a1a5e,#0a1f44,#1a3a6b);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🎨 Creative Arts</div>
+        <h1>Discover Your <span>Talent</span></h1>
+        <p>Art, music, dance and drama programmes that spark creativity and help every student find their unique voice and passion.</p>
+        <div class="hero-btns">
+          <a href="#academics" class="btn-primary">Our Programmes</a>
+          <a href="#gallery"   class="btn-outline">View Gallery</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide6.jpg.jpeg'), linear-gradient(135deg,#0a4a2a,#0a1f44,#2a4a0a);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🔬 Science & Tech</div>
+        <h1>Explore. Experiment. <span>Excel.</span></h1>
+        <p>Modern computer centres  that prepare students for the challenges of the 21st century.</p>
+        <div class="hero-btns">
+          <a href="#academics" class="btn-primary">Science Stream</a>
+          <a href="#contact"   class="btn-outline">Admissions</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide7.jpg.jpeg'), linear-gradient(135deg,#4a2a0a,#0a1f44,#4a0a0a);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🤝 Community & Values</div>
+        <h1>Built on <span>Strong Values</span></h1>
+        <p>Discipline, integrity and compassion are woven into every aspect of life at Aadarsh Avasiya School. We build character.</p>
+        <div class="hero-btns">
+          <a href="#about"   class="btn-primary">Our Vision</a>
+          <a href="#director" class="btn-outline">Director's Message</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 8 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero/slide8.jpeg'), linear-gradient(135deg,#1a1a4a,#0a1f44,#3a1a4a);"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🌟 Join Our Family</div>
+        <h1>Start Your <span>Journey</span> With Us</h1>
+        <p>Admissions are now open. Take the first step towards a future of excellence, achievement and lifelong friendships.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Apply Now</a>
+          <a href="https://wa.me/918292493246" target="_blank" class="btn-outline">WhatsApp Enquiry</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-slides -->
+
+  <!-- Dots (auto-generated by JS, but keeping static fallback here) -->
+  <div class="hero-dots" id="heroDots"></div>
+
+  <button class="hero-arrow left"  onclick="prevSlide()" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <button class="hero-arrow right" onclick="nextSlide()" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+
+</section><!-- /home -->
+
+
+<!-- ============================================================
+     STATS BAR
+============================================================ -->
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">25+</span><span class="stat-label">Years of Excellence</span></div>
+  <div class="stat-item"><span class="stat-num">1200+</span><span class="stat-label">Students Enrolled</span></div>
+  <div class="stat-item"><span class="stat-num">13+</span><span class="stat-label">Expert Teachers</span></div>
+  <div class="stat-item"><span class="stat-num">99%</span><span class="stat-label">Result Ratio</span></div>
+</div>
+
+
+<!-- ============================================================
+     ABOUT US
+============================================================ -->
+<section id="about">
+  <div class="about-grid">
+
+    <div class="about-visual reveal">
+      <div class="about-img-main">
+        <!-- Replace with a real school photo: -->
+             
+        <div class="about-img-pattern"></div>
+        <div class="about-emblem-big"><img src="images/school.jpeg" alt="School" style="width:100%;height:100%;object-fit:cover;border-radius:20px;"></div>
+        <i class="fas fa-school about-school-icon"></i>
+      </div>
+      <div class="about-badge-float">
+        <span>No. 1</span>
+        <span>Boarding School</span>
+      </div>
+    </div>
+
+    <div class="about-content reveal">
+      <div class="section-tag">About Us</div>
+      <h2 class="section-title">Shaping Future Leaders Since Day One</h2>
+      <p class="section-sub">Aadarsh Avasiya School is a premier English medium boarding school committed to providing quality education. We combine academic rigour with character development, equipping every student with the skills, confidence, and values to thrive in a rapidly changing world.</p>
+      <p class="section-sub" style="margin-top:12px;">Our campus offers state-of-the-art facilities, a dedicated faculty, and a vibrant co-curricular programme that ensures every child discovers and develops their unique potential.</p>
+      <div class="about-values">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-star"></i></div>
+          <div><h4>Academic Excellence</h4><p>Top results year after year with innovative teaching methods.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-heart"></i></div>
+          <div><h4>Character Building</h4><p>Values, discipline and integrity at the heart of all we do.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-users"></i></div>
+          <div><h4>Inclusive Community</h4><p>A welcoming environment where every student belongs.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-trophy"></i></div>
+          <div><h4>Holistic Growth</h4><p>Sports, arts & activities for full personality development.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     DIRECTOR'S MESSAGE
+============================================================ -->
+<section id="director">
+  <div class="director-inner">
+
+    <div class="director-portrait reveal">
+      <!-- Replace "D" with an actual photo: -->
+           
+      <div class="portrait-frame"><img src="images/director.png" alt="Director" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid var(--gold);"></div>
+      <div class="director-name">Kedar Prasad Sah</div>
+      <div class="director-title">Director &amp; Founder</div>
+    </div>
+
+    <div class="director-message reveal">
+      <div class="section-tag">Director's Message</div>
+      <h2>A <span>Message</span> From Our Director</h2>
+      <p>Education is not merely the accumulation of knowledge — it is the illumination of the mind, the awakening of potential, and the shaping of character. At Aadarsh Avasiya School, we have built more than an institution; we have built a community where every child is seen, heard, and nurtured.</p>
+      <p>Our dedicated teachers, modern facilities, and values-based curriculum work together to ensure that each student not only excels academically but also grows into a responsible, compassionate, and confident individual. We believe that the years a child spends in school are the most formative of their life — and we take that responsibility seriously.</p>
+      <p>I invite every parent and student to become part of the Aadarsh family. Together, we will build a brighter tomorrow.</p>
+      <div class="director-sig">— Kedar Prasad Sah</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ACADEMICS
+============================================================ -->
+<section id="academics">
+  <div class="academics-header reveal">
+    <div class="section-tag">Academics</div>
+    <h2 class="section-title">Comprehensive Curriculum</h2>
+    <p class="section-sub">A well-structured academic programme designed to challenge, inspire, and prepare students for life beyond school.</p>
+  </div>
+  <div class="academics-grid">
+    <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-child"></i></div>
+      <h3>Pre-Primary School</h3>
+      <p>Pre-Primary (Nursery – UKG) <br> We nurture curiosity and confidence through interactive learning, storytelling, and hands-on activities, creating a strong foundation for lifelong learning.</p>
+      <div class="ac-tags"><span class="ac-tag">Classes Nursery – UKG</span><span class="ac-tag">Activity Based</span><span class="ac-tag">English Medium</span></div>
+    </div>
+
+    <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-child"></i></div>
+      <h3>Primary School</h3>
+      <p>A joyful foundation in literacy, numeracy, science and arts with hands-on, activity-based learning for Classes I–V.</p>
+      <div class="ac-tags"><span class="ac-tag">Classes I–V</span><span class="ac-tag">Activity Based</span><span class="ac-tag">English Medium</span></div>
+    </div>
+    <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-book-open"></i></div>
+      <h3>Middle School</h3>
+      <p>Building depth in core subjects — Mathematics, Science, Social Studies, and Languages — for Classes VI–VIII.</p>
+      <div class="ac-tags"><span class="ac-tag">Classes VI–VIII</span><span class="ac-tag">NCERT Curriculum</span><span class="ac-tag">Lab Practicals</span></div>
+    </div>
+    <!--  <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-graduation-cap"></i></div>
+      <h3>Secondary School</h3>
+      <p>Board examination preparation with expert coaching, mock tests, and guidance for Classes IX–X (CBSE/State Board).</p>
+      <div class="ac-tags"><span class="ac-tag">Classes IX–X</span><span class="ac-tag">Board Prep</span><span class="ac-tag">Expert Faculty</span></div>
+    </div> -->
+    <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-flask"></i></div>
+      <h3>Coaching Classes </h3>
+      <p>Coaching (Class 9 & 10)Structured coaching with doubt-solving, practice tests, and performance tracking for strong board exam results.</p>
+      <div class="ac-tags"><span class="ac-tag">Classes 9 & 10</span><span class="ac-tag">All Subject</span><span class="ac-tag">Fully Qualified Teachers</span></div>
+    </div> 
+    <!-- <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-calculator"></i></div>
+      <h3>Commerce Stream</h3>
+      <p>Accounting, Economics, Business Studies and Mathematics for students aspiring to careers in commerce and management.</p>
+      <div class="ac-tags"><span class="ac-tag">Classes XI–XII</span><span class="ac-tag">Commerce</span><span class="ac-tag">Career Guidance</span></div>
+    </div> -->
+    <!-- <div class="academic-card reveal">
+      <div class="ac-icon"><i class="fas fa-music"></i></div>
+      <h3>Co-Curricular</h3>
+      <p>Sports, music, dance, drama, art and a variety of clubs that bring out the hidden talents in every student.</p>
+      <div class="ac-tags"><span class="ac-tag">Sports</span><span class="ac-tag">Arts &amp; Culture</span><span class="ac-tag">Scouts</span></div>
+    </div> -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     GALLERY
+     HOW TO CHANGE GALLERY IMAGES:
+       Each .gallery-item has a background-image in its style attr.
+       Replace 'images/gallery/photo1.jpg' etc. with your file paths.
+============================================================ -->
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <div class="section-tag">Gallery</div>
+    <h2 class="section-title">Life at Aadarsh Avasiya School</h2>
+    <p class="section-sub">A glimpse into the vibrant, active and enriching school life our students experience every day.</p>
+  </div>
+
+  <div class="gallery-tabs">
+    <button class="g-tab active" onclick="filterGallery('all',this)">All Photos</button>
+    <button class="g-tab" onclick="filterGallery('campus',this)">Campus</button>
+    <button class="g-tab" onclick="filterGallery('events',this)">Events</button>
+    <button class="g-tab" onclick="filterGallery('sports',this)">Sports</button>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+
+    <div class="gallery-item reveal gi-wide" data-cat="campus"
+    style="background-image: url('images/gallery/photos1m.jpeg');">
+      <!-- <div class="gallery-fallback g1"><i class="fas fa-school"></i></div> -->
+      <div class="gallery-caption"> 🙏School Prayer</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <div class="gallery-item reveal" data-cat="events"
+         style="background-image:url('images/gallery/photos2m.jpeg');">
+      <!-- <div class="gallery-fallback g2"><i class="fas fa-award"></i></div> -->
+      <div class="gallery-caption"> 🌲School Activities</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <div class="gallery-item reveal" data-cat="sports"
+         style="background-image:url('images/gallery/matriculation.jpeg');">
+      <!-- <div class="gallery-fallback g3"><i class="fas fa-running"></i></div> -->
+      <div class="gallery-caption">🏆 Class 10th Result</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <div class="gallery-item reveal" data-cat="campus"
+         style="background-image:url('images/gallery/School.jpeg');">
+      <!-- <div class="gallery-fallback g4"><i class="fas fa-flask"></i></div> -->
+      <div class="gallery-caption">🏆 School Topper 2025-26</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <div class="gallery-item reveal gi-wide" data-cat="events"
+         style="background-image:url('images/gallery/Dance.png');">
+      <!-- <div class="gallery-fallback g5"><i class="fas fa-theater-masks"></i></div> -->
+      <div class="gallery-caption">🎭 Annual Day Cultural Programme</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <!-- <div class="gallery-item reveal" data-cat="sports"
+         style="background-image:url('images/gallery/photo6.jpg');">
+      <div class="gallery-fallback g6"><i class="fas fa-swimming-pool"></i></div>
+      <div class="gallery-caption">🏊 Swimming &amp; Aquatic Events</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div> -->
+
+    <div class="gallery-item reveal" data-cat="campus"
+         style="background-image:url('images/gallery/computerlab.png');">
+      <!-- <div class="gallery-fallback g7"><i class="fas fa-book"></i></div> -->
+      <div class="gallery-caption">💻 Computer Laboratory</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <div class="gallery-item reveal" data-cat="events"
+         style="background-image:url('images/gallery/aigi.png');">
+      <!-- <div class="gallery-fallback g8"><i class="fas fa-music"></i></div> -->
+      <div class="gallery-caption">🎵 Music &amp; Performing Arts</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+
+    <!-- <div class="gallery-item reveal" data-cat="sports"
+         style="background-image:url('images/gallery/photo9.jpg');">
+      <div class="gallery-fallback g9"><i class="fas fa-futbol"></i></div>
+      <div class="gallery-caption">🏅 Inter-School Tournament</div>
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div> -->
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHATSAPP CONNECT BANNER
+============================================================ -->
+<div class="whatsapp-section">
+  <div class="ws-text">
+    <h3>Connect With Us on WhatsApp</h3>
+    <p>Quick replies, updates, and admissions enquiry — we're just a message away!</p>
+  </div>
+  <a href="https://wa.me/918292493246?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Aadarsh%20Avasiya%20School." target="_blank" class="wa-btn">
+    <i class="fab fa-whatsapp"></i> Chat with Us
+  </a>
+  <a href="https://whatsapp.com/channel/0029VaZq5Lh9xVJgeRvawG0g" target="_blank" class="wa-btn wa-channel-btn">
+    <i class="fab fa-whatsapp"></i> Join Our Channel
+  </a>
+</div>
+
+
+<!-- ============================================================
+     CONTACT & MAP
+============================================================ -->
+<section id="contact">
+  <div class="contact-header reveal">
+    <div class="section-tag">Contact Us</div>
+    <h2 class="section-title">Find Us &amp; Get in Touch</h2>
+    <p class="section-sub">We'd love to hear from you. Visit us on campus or reach out anytime.</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-info reveal">
+      <h3>Our Contact Details</h3>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="ci-text">
+            <strong>School Address</strong>
+            <span>Adarsh English Boarding School, Bihar, India</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="ci-text">
+            <strong>WhatsApp / Phone</strong>
+            <span><a href="https://wa.me/918292493246" target="_blank">+91-8292493246</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+          <div class="ci-text">
+            <strong>Email</strong>
+            <span>prasadkedar97@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-clock"></i></div>
+          <div class="ci-text">
+            <strong>School Hours</strong>
+            <span>Mon–Sat: 8:00 AM – 4:30 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="follow-us">
+        <p>Follow Us</p>
+        <div class="social-links">
+          <a href="https://youtube.com/@aadarshenglishboardingscho4338?si=JcjA_7MiuEsrx_Uz" target="_blank" class="social-link sl-yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/aebslaukahi?igsh=eHowc3JiNmZ6eGpj"  target="_blank" class="social-link sl-ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://whatsapp.com/channel/0029VaZq5Lh9xVJgeRvawG0g" target="_blank" class="social-link sl-wa" title="WhatsApp Channel"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-container reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.721950128245!2d86.55637547500753!3d26.480726776907357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee8c988cfff657%3A0xdea043a318303273!2sAdarsh%20English%20Boarding%20School!5e1!3m2!1sen!2sin!4v1774887852206!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="cursor:default;margin-bottom:16px;">
+        <div class="logo-emblem"><img src="images/logo.png" alt="Logo" style="width:46px;height:46px;border-radius:50%;"></div>
+        <div class="logo-text">
+          <span>Adarsh Avasiya School</span>
+          <span>Excellence in Education</span>
+        </div>
+      </div>
+      <p>A premier English medium boarding school dedicated to nurturing young minds and shaping the leaders of tomorrow through quality education, strong values, and holistic development.</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@AadarshAvasiyaSchool"    target="_blank" class="social-link sl-yt"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/aadarshavasiyaschool"   target="_blank" class="social-link sl-ig"><i class="fab fa-instagram"></i></a>
+        <a href="https://whatsapp.com/channel/0029Va6Xv1aGSCcIuXGS5G2w" target="_blank" class="social-link sl-wa"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul class="footer-links">
+        <li><a href="https://wa.me/918292493246" target="_blank">WhatsApp Us</a></li>
+        <li><a href="https://whatsapp.com/channel/0029VaZq5Lh9xVJgeRvawG0g" target="_blank">WA Channel</a></li>
+        <li><a href="https://youtube.com/@aadarshenglishboardingscho4338?si=JcjA_7MiuEsrx_Uz"target="_blank">YouTube</a></li>
+        <li><a href="https://www.instagram.com/aebslaukahi?igsh=eHowc3JiNmZ6eGpj" target="_blank">Instagram</a></li>
+        <li><a href="#contact">Admissions</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 <strong>Aadarsh Avasiya School</strong>. All rights reserved.</span>
+    <span> Designed by <a href="https://portfolio-phi-kohl-84.vercel.app/" target="_blank">Aashu Prakash</a></span>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     FLOATING WHATSAPP BUTTON
+============================================================ -->
+<a href="https://wa.me/918292493246?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Aadarsh%20Avasiya%20School."
+   target="_blank" class="float-wa" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- JS loaded at end for performance -->
+<script src="js/script.js"></script>
+</body>
+</html>
